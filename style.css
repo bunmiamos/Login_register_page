@@ -1,0 +1,479 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Edu VIC WA NT Beginner ', 'cursive';
+}
+.full-page
+{
+    height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(31, 128, 192, 0.575),rgba(57, 63, 68, 0.719)),url(bg-2.jpg);
+	background-position: center;
+	background-size: cover;
+    position: absolute;
+}
+.navbar
+{   
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+  
+}
+.navbar
+{
+    flex: 1;
+    text-align: left;
+}
+.navbar ul 
+{   list-style: none;
+    
+    margin:0;
+    padding: 8px 40px;
+    font-size: 17px;
+    overflow:hidden;
+    background-color: transparent;
+}
+.navbar ul li
+{
+	list-style:none ;
+    /*display: inline-block;*/
+    position: relative;
+    padding: 8px 50px;
+    font-size: 17px;
+    float: left; 
+    
+
+    
+}
+.navbar ul li a
+{
+    list-style: bold;
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-weight: 700px;
+    transition: 0.5s ;
+
+
+}
+.navbar ul li::after{
+    content:''; 
+    width: 0%;
+    height: 2px;
+    background : #36c8f4;
+    display:block;
+    margin: auto;
+    transition:0.5s;
+
+}
+.navbar  ul li:hover::after{
+    width: 100%;
+
+
+
+}
+.login-form
+{
+    display:none;
+}
+.form-box
+{
+    width:380px;
+	height:480px;
+	position:relative;
+	margin:2% auto;
+	background:transparent;
+	padding:10px;
+    overflow: hidden;
+} 
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #5f32201f;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #F3C693;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute; 
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+span
+{
+	color:rgb(20, 16, 16);
+	font-size:20px;
+	bottom:68px;
+	position:static;
+}
+
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:white;
+	font-size:15;
+}
+#register
+{
+	left:450px;
+}
+#register input
+{
+	color:white;
+	font-size: 15;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 250px;
+    position:relative;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #F08080;
+}
+
+@media screen and (max-width:100%){
+    .full-page{
+        width: 100% ;
+        height: 100%;
+    }
+
+	.navbar{
+		width:100%;
+		height: 100px;
+	}
+	nav ul {
+		margin-left: 30px;
+
+	}
+	nav ul li{
+		margin-left: 60px;
+
+	}
+	nav ul li a{
+		font-size: 1.6vw;
+	}
+}
+@media screen and (max-width:1170px) {
+    /*Login-box*/
+    .main{
+        padding-left: 20px;
+        height: 180vh;
+    }
+    .form-box{
+        margin-left: -30px;
+        width: 250px;
+        height: 370px;
+        background: transparent;
+        position: inherit;
+        top: 420px;
+        left: 50px;
+        transform: translate(0%,-5%);
+        border-radius: 10px;
+        padding: 25px;
+    }
+    .input-group-login{
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border-bottom: none;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+    .btnn a{
+        font-size: 16px;
+    }
+    .form .link a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 830px){
+    /*For tablet*/
+   
+    .content{
+        margin-top: 120px;
+        width: 80%;   
+        margin-left: 40px;  
+    }
+    .content .par{
+        width: 90%;
+        font-size: 1.8vw;
+    }
+    .content .cn{
+        width: 15%;
+        height: 4.5vw;
+        font-size: 2vw;
+    }
+    .content a{
+        font-size: 2vw
+    }
+
+    .menu{
+        width: 100%;
+    }
+    ul{
+        margin-top: -5px;
+        margin-left: 5px;
+    }
+    ul li{
+        margin-left: 60px;
+    }
+    ul li a{
+       font-size: 2vw; 
+    }
+    .search{
+        margin-top: -20px;
+        margin-left: 60px;   
+    }   
+    .srch{
+        height: 30px;
+        width: 160px;
+        font-size: 12px;
+    }
+    .btn{
+        height:30px;
+        width: 70px;
+    }
+    .main{
+        padding-left: 20px;
+        height: 180vh;
+    }
+    .form{
+        margin-left: -30px;
+        width: 250px;
+        height: 370px;
+        background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+        position: absolute;
+        top: 430px;
+        left: 50px;
+        transform: translate(0%,-5%);
+        border-radius: 10px;
+        padding: 25px;
+    }
+    .form input{
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border-bottom: 1px solid #ff7200;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+    .btnn a{
+        font-size: 16px;
+    }
+    .form .link a{
+        font-size: 16px;
+        
+    }
+}
+
+@media screen and (max-width: 600px){
+    /*IPAD*/
+    
+    .content{
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+    .search{
+        margin-top: -40px;
+        margin-left: 42px;
+    }
+    .logo{
+        margin-left: 180px;
+        font-size: 4vw;
+    }
+    ul{
+        margin-top: -25px;
+        margin-left: -5px;
+    }
+    ul li {
+        margin-left: 50px;
+    }
+    ul li a{
+        font-size: 2vw;
+    }   
+}
+
+@media screen and (max-width: 450px){
+    /*mobile*/
+    
+    
+    nav ul{
+        margin-top: -25px;
+    }
+    nav ul li {
+        margin-left: 42px;
+    }
+    nav ul li a{
+        font-size: 2vw;
+    }  
+    .search{
+        margin-top: -40px;
+        margin-left: 38px;
+    } 
+/* home*/
+body {
+	background: #1690A7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+}
+
+*{
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+form {
+	width: 500px;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+label {
+	color: #888;
+	font-size: 18px;
+	padding: 10px;
+}
+
+button {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+}
+button:hover{
+	opacity: .7;
+}
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+a {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+	text-decoration: none;
+}
+a:hover{
+	opacity: .7;
+}
+/*About us*/
+/*services*/
+/* contact*/
+}
